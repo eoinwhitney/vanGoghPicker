@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		732476B11C887E7700CF03E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476B01C887E7700CF03E0 /* main.m */; };
+		732476B41C887E7700CF03E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476B31C887E7700CF03E0 /* AppDelegate.m */; };
+		732476B71C887E7700CF03E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476B61C887E7700CF03E0 /* ViewController.m */; };
+		732476BA1C887E7700CF03E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732476B81C887E7700CF03E0 /* Main.storyboard */; };
+		732476BD1C887E7700CF03E0 /* VanGoghPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 732476BB1C887E7700CF03E0 /* VanGoghPicker.xcdatamodeld */; };
+		732476BF1C887E7700CF03E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732476BE1C887E7700CF03E0 /* Assets.xcassets */; };
+		732476C21C887E7700CF03E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732476C01C887E7700CF03E0 /* LaunchScreen.storyboard */; };
+		732476CD1C887E7700CF03E0 /* VanGoghPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476CC1C887E7700CF03E0 /* VanGoghPickerTests.m */; };
+		732476D81C887E7700CF03E0 /* VanGoghPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476D71C887E7700CF03E0 /* VanGoghPickerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		732476C91C887E7700CF03E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 732476A41C887E7700CF03E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 732476AB1C887E7700CF03E0;
+			remoteInfo = VanGoghPicker;
+		};
+		732476D41C887E7700CF03E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 732476A41C887E7700CF03E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 732476AB1C887E7700CF03E0;
+			remoteInfo = VanGoghPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		732476AC1C887E7700CF03E0 /* VanGoghPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VanGoghPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		732476B01C887E7700CF03E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		732476B21C887E7700CF03E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		732476B31C887E7700CF03E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		732476B51C887E7700CF03E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		732476B61C887E7700CF03E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		732476B91C887E7700CF03E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		732476BC1C887E7700CF03E0 /* VanGoghPicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VanGoghPicker.xcdatamodel; sourceTree = "<group>"; };
+		732476BE1C887E7700CF03E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		732476C11C887E7700CF03E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		732476C31C887E7700CF03E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732476C81C887E7700CF03E0 /* VanGoghPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanGoghPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		732476CC1C887E7700CF03E0 /* VanGoghPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanGoghPickerTests.m; sourceTree = "<group>"; };
+		732476CE1C887E7700CF03E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732476D31C887E7700CF03E0 /* VanGoghPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanGoghPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		732476D71C887E7700CF03E0 /* VanGoghPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanGoghPickerUITests.m; sourceTree = "<group>"; };
+		732476D91C887E7700CF03E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		732476A91C887E7700CF03E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732476C51C887E7700CF03E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732476D01C887E7700CF03E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		732476A31C887E7700CF03E0 = {
+			isa = PBXGroup;
+			children = (
+				732476AE1C887E7700CF03E0 /* VanGoghPicker */,
+				732476CB1C887E7700CF03E0 /* VanGoghPickerTests */,
+				732476D61C887E7700CF03E0 /* VanGoghPickerUITests */,
+				732476AD1C887E7700CF03E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		732476AD1C887E7700CF03E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				732476AC1C887E7700CF03E0 /* VanGoghPicker.app */,
+				732476C81C887E7700CF03E0 /* VanGoghPickerTests.xctest */,
+				732476D31C887E7700CF03E0 /* VanGoghPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		732476AE1C887E7700CF03E0 /* VanGoghPicker */ = {
+			isa = PBXGroup;
+			children = (
+				732476B21C887E7700CF03E0 /* AppDelegate.h */,
+				732476B31C887E7700CF03E0 /* AppDelegate.m */,
+				732476B51C887E7700CF03E0 /* ViewController.h */,
+				732476B61C887E7700CF03E0 /* ViewController.m */,
+				732476B81C887E7700CF03E0 /* Main.storyboard */,
+				732476BE1C887E7700CF03E0 /* Assets.xcassets */,
+				732476C01C887E7700CF03E0 /* LaunchScreen.storyboard */,
+				732476C31C887E7700CF03E0 /* Info.plist */,
+				732476BB1C887E7700CF03E0 /* VanGoghPicker.xcdatamodeld */,
+				732476AF1C887E7700CF03E0 /* Supporting Files */,
+			);
+			path = VanGoghPicker;
+			sourceTree = "<group>";
+		};
+		732476AF1C887E7700CF03E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				732476B01C887E7700CF03E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		732476CB1C887E7700CF03E0 /* VanGoghPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				732476CC1C887E7700CF03E0 /* VanGoghPickerTests.m */,
+				732476CE1C887E7700CF03E0 /* Info.plist */,
+			);
+			path = VanGoghPickerTests;
+			sourceTree = "<group>";
+		};
+		732476D61C887E7700CF03E0 /* VanGoghPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				732476D71C887E7700CF03E0 /* VanGoghPickerUITests.m */,
+				732476D91C887E7700CF03E0 /* Info.plist */,
+			);
+			path = VanGoghPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		732476AB1C887E7700CF03E0 /* VanGoghPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732476DC1C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPicker" */;
+			buildPhases = (
+				732476A81C887E7700CF03E0 /* Sources */,
+				732476A91C887E7700CF03E0 /* Frameworks */,
+				732476AA1C887E7700CF03E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VanGoghPicker;
+			productName = VanGoghPicker;
+			productReference = 732476AC1C887E7700CF03E0 /* VanGoghPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		732476C71C887E7700CF03E0 /* VanGoghPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732476DF1C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPickerTests" */;
+			buildPhases = (
+				732476C41C887E7700CF03E0 /* Sources */,
+				732476C51C887E7700CF03E0 /* Frameworks */,
+				732476C61C887E7700CF03E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				732476CA1C887E7700CF03E0 /* PBXTargetDependency */,
+			);
+			name = VanGoghPickerTests;
+			productName = VanGoghPickerTests;
+			productReference = 732476C81C887E7700CF03E0 /* VanGoghPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		732476D21C887E7700CF03E0 /* VanGoghPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732476E21C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPickerUITests" */;
+			buildPhases = (
+				732476CF1C887E7700CF03E0 /* Sources */,
+				732476D01C887E7700CF03E0 /* Frameworks */,
+				732476D11C887E7700CF03E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				732476D51C887E7700CF03E0 /* PBXTargetDependency */,
+			);
+			name = VanGoghPickerUITests;
+			productName = VanGoghPickerUITests;
+			productReference = 732476D31C887E7700CF03E0 /* VanGoghPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		732476A41C887E7700CF03E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = RLDT;
+				TargetAttributes = {
+					732476AB1C887E7700CF03E0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					732476C71C887E7700CF03E0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 732476AB1C887E7700CF03E0;
+					};
+					732476D21C887E7700CF03E0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 732476AB1C887E7700CF03E0;
+					};
+				};
+			};
+			buildConfigurationList = 732476A71C887E7700CF03E0 /* Build configuration list for PBXProject "VanGoghPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 732476A31C887E7700CF03E0;
+			productRefGroup = 732476AD1C887E7700CF03E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				732476AB1C887E7700CF03E0 /* VanGoghPicker */,
+				732476C71C887E7700CF03E0 /* VanGoghPickerTests */,
+				732476D21C887E7700CF03E0 /* VanGoghPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		732476AA1C887E7700CF03E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732476C21C887E7700CF03E0 /* LaunchScreen.storyboard in Resources */,
+				732476BF1C887E7700CF03E0 /* Assets.xcassets in Resources */,
+				732476BA1C887E7700CF03E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732476C61C887E7700CF03E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732476D11C887E7700CF03E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		732476A81C887E7700CF03E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732476B71C887E7700CF03E0 /* ViewController.m in Sources */,
+				732476B41C887E7700CF03E0 /* AppDelegate.m in Sources */,
+				732476BD1C887E7700CF03E0 /* VanGoghPicker.xcdatamodeld in Sources */,
+				732476B11C887E7700CF03E0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732476C41C887E7700CF03E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732476CD1C887E7700CF03E0 /* VanGoghPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732476CF1C887E7700CF03E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732476D81C887E7700CF03E0 /* VanGoghPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		732476CA1C887E7700CF03E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 732476AB1C887E7700CF03E0 /* VanGoghPicker */;
+			targetProxy = 732476C91C887E7700CF03E0 /* PBXContainerItemProxy */;
+		};
+		732476D51C887E7700CF03E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 732476AB1C887E7700CF03E0 /* VanGoghPicker */;
+			targetProxy = 732476D41C887E7700CF03E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		732476B81C887E7700CF03E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				732476B91C887E7700CF03E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		732476C01C887E7700CF03E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				732476C11C887E7700CF03E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		732476DA1C887E7700CF03E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		732476DB1C887E7700CF03E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		732476DD1C887E7700CF03E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VanGoghPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.VanGoghPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		732476DE1C887E7700CF03E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VanGoghPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.VanGoghPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		732476E01C887E7700CF03E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VanGoghPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.VanGoghPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VanGoghPicker.app/VanGoghPicker";
+			};
+			name = Debug;
+		};
+		732476E11C887E7700CF03E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VanGoghPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.VanGoghPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VanGoghPicker.app/VanGoghPicker";
+			};
+			name = Release;
+		};
+		732476E31C887E7700CF03E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VanGoghPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.VanGoghPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VanGoghPicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		732476E41C887E7700CF03E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VanGoghPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.VanGoghPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VanGoghPicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		732476A71C887E7700CF03E0 /* Build configuration list for PBXProject "VanGoghPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732476DA1C887E7700CF03E0 /* Debug */,
+				732476DB1C887E7700CF03E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		732476DC1C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732476DD1C887E7700CF03E0 /* Debug */,
+				732476DE1C887E7700CF03E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		732476DF1C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732476E01C887E7700CF03E0 /* Debug */,
+				732476E11C887E7700CF03E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		732476E21C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732476E31C887E7700CF03E0 /* Debug */,
+				732476E41C887E7700CF03E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		732476BB1C887E7700CF03E0 /* VanGoghPicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				732476BC1C887E7700CF03E0 /* VanGoghPicker.xcdatamodel */,
+			);
+			currentVersion = 732476BC1C887E7700CF03E0 /* VanGoghPicker.xcdatamodel */;
+			path = VanGoghPicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 732476A41C887E7700CF03E0 /* Project object */;
+}
