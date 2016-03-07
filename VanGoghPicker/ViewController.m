@@ -7,10 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "politicianViewController.h"
 
-@interface ViewController () <UIPickerViewDelegate>
+
+@interface ViewController () <UIPickerViewDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIPickerView *vanGoghPicker;
 @property (nonatomic, strong) NSMutableArray *pictureArray;
+@property (strong, nonatomic) ENWPoliticians *politicians;
+@property (strong, nonatomic) NSMutableArray *politiciansArray;
+@property (nonatomic) BOOL isEoin;
+@property (nonatomic) BOOL isCruz;
+@property (nonatomic) BOOL isTrump;
+@property (nonatomic) BOOL isRubio;
+
+
 
 @end
 
@@ -19,34 +29,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    self.isEoin=NO;
+    self.isCruz=NO;
+    self.isTrump=NO;
+    self.isRubio=NO;
+    
+    
+    
+    
+    
     self.pictureArray = [NSMutableArray new];
+   
     
-//    UIImage *slice1 = [UIImage imageNamed:@"slice1"];
-//    UIImage *slice2 = [UIImage imageNamed:@"slice2"];
-//    UIImage *slice3 = [UIImage imageNamed:@"slice3"];
-//    UIImage *slice4 = [UIImage imageNamed:@"slice4"];
-//    UIImage *slice5 = [UIImage imageNamed:@"slice5"];
-//    UIImage *slice6 = [UIImage imageNamed:@"slice6"];
-//    UIImage *slice7 = [UIImage imageNamed:@"slice7"];
-//    UIImage *slice8 = [UIImage imageNamed:@"slice8"];
-//    UIImage *slice9 = [UIImage imageNamed:@"slice9"];
-//    UIImage *slice10 = [UIImage imageNamed:@"slice10"];
-//    UIImage *slice11 = [UIImage imageNamed:@"slice11"];
-//    UIImage *slice12 = [UIImage imageNamed:@"slice12"];
-//    UIImage *slice13 = [UIImage imageNamed:@"slice13"];
-//    UIImage *slice14 = [UIImage imageNamed:@"slice14"];
-//    UIImage *slice15 = [UIImage imageNamed:@"slice15"];
-//    UIImage *slice16 = [UIImage imageNamed:@"slice16"];
-//    UIImage *slice17 = [UIImage imageNamed:@"slice17"];
-//    
-//    self.pictureArray = @[slice1, slice2, slice3, slice4, slice5, slice6, slice7, slice8, slice9, slice10, slice11, slice12, slice13, slice14, slice15, slice16, slice17, slice16, slice15, slice14, slice13, slice12, slice11, slice10, slice9, slice8, slice7, slice6, slice5, slice4, slice3, slice2];
+   ENWPoliticians *eoin=[[ENWPoliticians alloc]initWithSlogan:@"Everybody chill!" dumbIdeas:@[@"everybody gets to go to college",@"everybody gets health care",@"the United States will not go into any more wars",@"free booze for everybody on saturdays",@"no more campaign contributions"] image:[UIImage imageNamed:@"eoin.jpg"] name:@"Eoin Whitney"];
     
-    self.pictureArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"Slice1.png"], [UIImage imageNamed:@"Slice2"],[UIImage imageNamed:@"Slice3"],[UIImage imageNamed:@"Slice4"],[UIImage imageNamed:@"Slice5"],[UIImage imageNamed:@"Slice6"],[UIImage imageNamed:@"Slice7"],[UIImage imageNamed:@"Slice8"],[UIImage imageNamed:@"Slice9"],[UIImage imageNamed:@"Slice10"],[UIImage imageNamed:@"Slice11"],[UIImage imageNamed:@"Slice12"],[UIImage imageNamed:@"Slice13"],[UIImage imageNamed:@"Slice14"],[UIImage imageNamed:@"Slice15"],[UIImage imageNamed:@"Slice16"],[UIImage imageNamed:@"Slice17"], nil];
+    ENWPoliticians *cruz=[[ENWPoliticians alloc]initWithSlogan:@"reigniting the promise of america" dumbIdeas:@[@"the moon might be as intimidating as obamacare",@"i was bitten by an octopus",@"twenty years from now if there is some obscure trivial pursuit question, I am confident I will be the answer",@"I'll work with the martians",@"the obama economy is a disaster, obamacare is a trainwreck, and obama-clinton foreign policy of leading from behind-the whole world is on fire",@"i am a lizard person"] image:[UIImage imageNamed:@"cruz.jpg"] name:@"Ted Cruz"];
+    
+    ENWPoliticians *trump=[[ENWPoliticians alloc]initWithSlogan:@"make america great again" dumbIdeas:@[@"build a wall",@"deport 11 million people",@"stop muslims from entering the country",@"bring the kkk to prominence",@"restrict freedom of the press"] image:[UIImage imageNamed:@"trump.jpg"] name:@"Donald Trump"];
+    
+    ENWPoliticians *rubio=[[ENWPoliticians alloc]initWithSlogan:@"a new american century" dumbIdeas:@[@"america is not a planet",@"the decisions that the left want us to make.... will make america a more expensive place to create jobs",@"our nations motto is 'in god we trust,'reminding us that faith in our creator is the most important american value of all",@"no abortions even in case of rape, incest, or life of mother",@"im sweaty"] image:[UIImage imageNamed:@"rubio.jpg"] name:@"Marco Rubio"];
+    
+    self.politiciansArray=[@[eoin,cruz,rubio,trump]mutableCopy];
+    
+    
+    
+    self.pictureArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"eoin.jpg"],[UIImage imageNamed:@"trump.jpg"],[UIImage imageNamed:@"cruz.jpg"],[UIImage imageNamed:@"rubio.jpg"], nil];
     
     self.vanGoghPicker.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (IBAction)eoinButtonTapped:(id)sender {
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -80,10 +98,73 @@
     return pvView;
     
 }
+- (IBAction)feelingLuckyButtonTapped:(id)sender {
+    NSUInteger random=arc4random_uniform(1000);
+    
+    
+    [self.vanGoghPicker selectRow:random inComponent:0 animated:YES];
+    
+    
+     UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"Your Candidate" message:@"Do You Want This One?" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok=[UIAlertAction actionWithTitle:@"YES" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        if (random%4==0) {
+        [self performSegueWithIdentifier:@"eoinSegue" sender:self];
+        }
+        else if (random%4==1) {
+         [self performSegueWithIdentifier:@"trumpSegue" sender:self];
+        }
+        else if (random%4==2) {
+          [self performSegueWithIdentifier:@"cruzSegue" sender:self];
+        }
+        else if (random%4==3) {
+             [self performSegueWithIdentifier:@"rubioSegue" sender:self];
+        }
+    }];
+    [alert addAction:ok];
+    
+    UIAlertAction *no=[UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alert addAction:no];
+    
+    UIAlertAction *spinAgain=[UIAlertAction actionWithTitle:@"spinAgain" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self feelingLuckyButtonTapped:nil];
+        [alert dismissViewControllerAnimated:YES completion:nil];
+        
+        
+        
+        
+    }];
+    [alert addAction:spinAgain];
+    
+     [self presentViewController:alert animated:YES completion:nil];
+}
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
 
-    return 49;
+    return 75;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"eoinSegue"]) {
+        politicianViewController *vc= [segue destinationViewController];
+        vc.politician=self.politiciansArray[0];
+        
+    }
+    if ([[segue identifier] isEqualToString:@"trumpSegue"]) {
+        politicianViewController *vc= [segue destinationViewController];
+        vc.politician=self.politiciansArray[3];
+    
+}
+    if ([[segue identifier] isEqualToString:@"cruzSegue"]) {
+        politicianViewController *vc= [segue destinationViewController];
+        vc.politician=self.politiciansArray[1];
+}
+    if ([[segue identifier] isEqualToString:@"rubioSegue"]) {
+        politicianViewController *vc= [segue destinationViewController];
+        vc.politician=self.politiciansArray[2];
+    }
+}
 @end

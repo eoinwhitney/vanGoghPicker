@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ENWPoliticians.h"
 
 @interface ViewController : UIViewController
 

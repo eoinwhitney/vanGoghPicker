@@ -16,6 +16,13 @@
 		732476C21C887E7700CF03E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732476C01C887E7700CF03E0 /* LaunchScreen.storyboard */; };
 		732476CD1C887E7700CF03E0 /* VanGoghPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476CC1C887E7700CF03E0 /* VanGoghPickerTests.m */; };
 		732476D81C887E7700CF03E0 /* VanGoghPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 732476D71C887E7700CF03E0 /* VanGoghPickerUITests.m */; };
+		7B2CE6161C89FE480084A8BE /* trump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CE6151C89FE480084A8BE /* trump.jpg */; };
+		7B2CE6181C89FE620084A8BE /* rubio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CE6171C89FE620084A8BE /* rubio.jpg */; };
+		7B2CE61A1C89FE7F0084A8BE /* cruz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CE6191C89FE7F0084A8BE /* cruz.jpg */; };
+		7B2CE61D1C8A0A980084A8BE /* ENWPoliticians.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CE61C1C8A0A980084A8BE /* ENWPoliticians.m */; };
+		7B2CE6201C8A0D740084A8BE /* politicianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CE61F1C8A0D740084A8BE /* politicianViewController.m */; };
+		7B2CE6221C8A2A700084A8BE /* eoin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2CE6211C8A2A700084A8BE /* eoin.jpg */; };
+		7B95014D1C8E1F2C00CFC11C /* ENWLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B95014C1C8E1F2C00CFC11C /* ENWLastViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,16 @@
 		732476D31C887E7700CF03E0 /* VanGoghPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanGoghPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732476D71C887E7700CF03E0 /* VanGoghPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanGoghPickerUITests.m; sourceTree = "<group>"; };
 		732476D91C887E7700CF03E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B2CE6151C89FE480084A8BE /* trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trump.jpg; sourceTree = "<group>"; };
+		7B2CE6171C89FE620084A8BE /* rubio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rubio.jpg; sourceTree = "<group>"; };
+		7B2CE6191C89FE7F0084A8BE /* cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cruz.jpg; sourceTree = "<group>"; };
+		7B2CE61B1C8A0A980084A8BE /* ENWPoliticians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENWPoliticians.h; sourceTree = "<group>"; };
+		7B2CE61C1C8A0A980084A8BE /* ENWPoliticians.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENWPoliticians.m; sourceTree = "<group>"; };
+		7B2CE61E1C8A0D740084A8BE /* politicianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = politicianViewController.h; sourceTree = "<group>"; };
+		7B2CE61F1C8A0D740084A8BE /* politicianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = politicianViewController.m; sourceTree = "<group>"; };
+		7B2CE6211C8A2A700084A8BE /* eoin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eoin.jpg; sourceTree = "<group>"; };
+		7B95014B1C8E1F2C00CFC11C /* ENWLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ENWLastViewController.h; path = ../ENWLastViewController.h; sourceTree = "<group>"; };
+		7B95014C1C8E1F2C00CFC11C /* ENWLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ENWLastViewController.m; path = ../ENWLastViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +123,14 @@
 				732476B21C887E7700CF03E0 /* AppDelegate.h */,
 				732476B31C887E7700CF03E0 /* AppDelegate.m */,
 				732476B51C887E7700CF03E0 /* ViewController.h */,
+				7B95014B1C8E1F2C00CFC11C /* ENWLastViewController.h */,
+				7B95014C1C8E1F2C00CFC11C /* ENWLastViewController.m */,
 				732476B61C887E7700CF03E0 /* ViewController.m */,
 				732476B81C887E7700CF03E0 /* Main.storyboard */,
+				7B2CE61E1C8A0D740084A8BE /* politicianViewController.h */,
+				7B2CE61F1C8A0D740084A8BE /* politicianViewController.m */,
+				7B2CE61B1C8A0A980084A8BE /* ENWPoliticians.h */,
+				7B2CE61C1C8A0A980084A8BE /* ENWPoliticians.m */,
 				732476BE1C887E7700CF03E0 /* Assets.xcassets */,
 				732476C01C887E7700CF03E0 /* LaunchScreen.storyboard */,
 				732476C31C887E7700CF03E0 /* Info.plist */,
@@ -120,6 +143,10 @@
 		732476AF1C887E7700CF03E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B2CE6211C8A2A700084A8BE /* eoin.jpg */,
+				7B2CE6151C89FE480084A8BE /* trump.jpg */,
+				7B2CE6191C89FE7F0084A8BE /* cruz.jpg */,
+				7B2CE6171C89FE620084A8BE /* rubio.jpg */,
 				732476B01C887E7700CF03E0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,7 +273,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2CE61A1C89FE7F0084A8BE /* cruz.jpg in Resources */,
+				7B2CE6161C89FE480084A8BE /* trump.jpg in Resources */,
 				732476C21C887E7700CF03E0 /* LaunchScreen.storyboard in Resources */,
+				7B2CE6221C8A2A700084A8BE /* eoin.jpg in Resources */,
+				7B2CE6181C89FE620084A8BE /* rubio.jpg in Resources */,
 				732476BF1C887E7700CF03E0 /* Assets.xcassets in Resources */,
 				732476BA1C887E7700CF03E0 /* Main.storyboard in Resources */,
 			);
@@ -273,8 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2CE61D1C8A0A980084A8BE /* ENWPoliticians.m in Sources */,
 				732476B71C887E7700CF03E0 /* ViewController.m in Sources */,
+				7B2CE6201C8A0D740084A8BE /* politicianViewController.m in Sources */,
 				732476B41C887E7700CF03E0 /* AppDelegate.m in Sources */,
+				7B95014D1C8E1F2C00CFC11C /* ENWLastViewController.m in Sources */,
 				732476BD1C887E7700CF03E0 /* VanGoghPicker.xcdatamodeld in Sources */,
 				732476B11C887E7700CF03E0 /* main.m in Sources */,
 			);
@@ -502,6 +536,7 @@
 				732476DE1C887E7700CF03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		732476DF1C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +545,7 @@
 				732476E11C887E7700CF03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		732476E21C887E7700CF03E0 /* Build configuration list for PBXNativeTarget "VanGoghPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +554,7 @@
 				732476E41C887E7700CF03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
